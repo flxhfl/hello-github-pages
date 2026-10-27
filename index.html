@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meine GitHub Pages Website</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f4f4f4;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    button {
+      padding: 12px 24px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Hallo GitHub Pages!</h1>
+
+  <p>Das ist meine erste Website.</p>
+
+  <button onclick="zaehlen()">
+    Klick mich!
+  </button>
+
+  <p id="ausgabe">Noch nicht geklickt.</p>
+
+  <script>
+    let klicks = 0;
+
+    function zaehlen() {
+      klicks++;
+
+      document.getElementById("ausgabe")
+        .textContent = "Klicks: " + klicks;
+    }
+
+    console.log("JavaScript läuft!");
+  </script>
+
+</body>
+</html>
